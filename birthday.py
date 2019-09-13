@@ -14,7 +14,6 @@ def main():
     num_days = calculate_days_between_dates(birthday, now)
     print_birthday_info(num_days)
 
-
 def get_birthday_from_user():
     print("What is your birthday?")
     year = int(input("Year [YYYY]? "))
@@ -24,12 +23,10 @@ def get_birthday_from_user():
     birthday = datetime.date(year, month, day)
     return birthday
 
-
 def calculate_days_between_dates(date1, date2):
     this_year = datetime.date(date2.year, date1.month, date1.day)
     dt = this_year - date2
     return dt.days
-
 
 def print_birthday_info(number_of_days):
     if number_of_days > 0:
