@@ -46,31 +46,51 @@ def main():
         print("")
         if player_choice == 1:
             if computer_choice == 1:
-                print("Charcoal also chooses Lavamander. This match is a tie.\n")
+                print("Charcoal also chooses Lavamander. Your two Lavamanders fight for "
+                      "days without either one gaining an advantage. Eventually, a storm "
+                      "comes and the rain cools them down. Now they are friends. This "
+                      "match is a tie.\n")
             elif computer_choice == 2:
-                print("Charcoal chose Sharkpuncher, who douses your Lavamander with water and turns it to stone. You lose this round.\n")
+                print("Charcoal chose Sharkpuncher, who douses your Lavamander with water "
+                      "turning it to stone. You lose this round.\n")
                 computer_wins = computer_wins + 1
             else:
-                print("Charcoal chose Entrotree, and your Lavamander shoots lava at it, burning it to a crisp. You win this round.\n")
+                print("Charcoal chose Entrotree, and your Lavamander shoots lava at it, "
+                      "burning it to a crisp. You win this round.\n")
                 player_wins = player_wins + 1
         elif player_choice == 2:
             if computer_choice == 1:
-                print("Charcoal foolishly chose Lavamander. Your Sharkpuncher quenches Lavamander and turns it to a statue. You win this round.\n")
+                print("Charcoal foolishly chose Lavamander. Your Sharkpuncher quenches "
+                      "Lavamander and turns it to a statue. You win this round.\n")
                 player_wins = player_wins + 1
             elif computer_choice == 2:
-                print("Tie\n")
+                print("Sharkpunchers love to punch. Charcoal also chose Sharkpuncher, "
+                      "and your two Sharkpunchers punched each other until they fell in "
+                      "love. This round is a  Tie.\n")
             else:
-                print("You lose this round.\n")
+                print("Charcoal chose Entrotree. Entrotree plants it's roots in your Sharkpuncher's "
+                      "fist and pulls all of the water out of it's body, leaving you with a dessicated "
+                      "Sharkpuncher.\n")
                 computer_wins = computer_wins + 1
         else:
             if computer_choice == 1:
-                print("You lose this round.\n")
+                print("Charcoal chose Lavamander. Their Lavamander jumps on your Entrotree, "
+                      "burning it to a crisp. Charcoal says, \"That's why they call me Charcoal!\""
+                      "You lose this round.\n")
                 computer_wins = computer_wins + 1
             elif computer_choice == 2:
-                print("You win this round.\n")
+                print("Charcoal chose Sharkpuncher. Sharkpunchers punches do little damage to "
+                      "your Entrotree, and eventually Entrotree's bark captures a punch and "
+                      "envelops Charcoal's Sharkpuncher, draining it from all the water in "
+                      "it's body. You win this round.\n")
                 player_wins = player_wins + 1
             else:
-                print("It's a tie.\n")
+                print("Charcoal also chose Entrotree. Your Entrotree hasn't seen another "
+                      "Entrotree for as long as it can remember, and neither has Charcoal's. "
+                      "Instead of fighting, they embrace each other and go out for a coffee "
+                      "to catch up. This round is a tie.\n")
+        input("\nPress <Enter> to continue...")
+        print("")
 
     # We're done playing at this point
     if player_wins == 2:
@@ -80,7 +100,6 @@ You have destroyed your rival, Charcoal. They run away in tears, vowing to ensla
 and defeat you next time. """)
     else:
         print("""
-
 You have been ruthlessly crushed by your rival, Charcoal. They tease you until you run away in tears, resolving
 yourself to enslave stronger Monstepoks and return to defeat Charcoal next time.""")
 
