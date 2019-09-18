@@ -25,6 +25,7 @@ while go_again:
 
     go_again = False
     if input("Would you like to enter another zip code (Y/N)? ") == "Y":
+        print("")
         go_again = True
 
 print("Thank you for using the Newaygo County Zip Code Sorter. Goodbye!")
